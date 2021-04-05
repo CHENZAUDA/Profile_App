@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>USER APP</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.facebook.com/tech.career">
+            <img src="https://scontent.ftlv16-1.fna.fbcdn.net/v/t1.18169-9/16266097_1409202982463667_4376459002799653107_n.png?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=euzpw-GXe40AX8CCa3w&_nc_ht=scontent.ftlv16-1.fna&oh=21fc0f6b4223a539f69b3fb344922db3&oe=608CD212"
+                width="100px" height="100px" alt="tech-Career logo" />
+        </a>
+        <h1>welcome to profile app</h1>
+    </header>
+   
+        <div class="sidebar">
+            <button onclick="tableProfiles()">TABLE</button><br>
+            <button onclick="addProfile()">ADD</button><br>
+            <button onclick="homePage()">HOME PAGE</button><br>
+        </div>
+
+        <div id="mainDiv"></div>
+        <div id="table">
+            <table id="showTable">
+                <tr>
+                    <th>Full name:</th>
+                    <th>Email:</th>
+                    <th>Age:</th>
+                    <th>Phone:</th>
+                    <th>Picture:</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="addUser">
+            <form>
+                <label>Full name</label>
+                <input id="firstName" required type="text" placeholder="first name" />
+                <input id="lastName" required type="text" placeholder="last name" />
+                <label>Email</label>
+                <input id="email" required type="email" placeholder="chen@gmail.com" />
+                <input id="emailConfirm" required type="email" onchange="emailConfirmation()"
+                    placeholder="confirm email" />
+                <label>Age</label>
+                <input id="age" type="number" />
+                <label>Phon number:</label>
+                <input id="phone" required type="number" placeholder="+927-5555-787-34" />
+                <label>Add picture</label>
+                <input id="picture" type="file" />
+                <!--button for required input-->
+                <button type="submit">checkInfo</button>
+            </form>
+            <!--button for add input to cards-->
+            <button type="button" onclick="submit()">submit</button>
+        </div>
+    
+    <footer>
+        <a href="https://www.facebook.com/chen.zauda/" target="_blank"><i class="fab fa-facebook fa-4x"></i></a>
+        <a href="https://www.linkedin.com/in/chen-zauda-73950316a/" target="_blank"><i
+                class="fab fa-linkedin fa-4x"></i></a>
+        <a href="https://github.com/CHENZAUDA" target="_blank"><i class="fab fa-github-square fa-4x"></i></i></a>
+
+
+        <div>
+            tech-Career: chen zauda &copy;
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
